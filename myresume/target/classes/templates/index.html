@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎光临</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: url("images/1.jpg") center/ 100% 100% no-repeat;
+        }
+
+        .parent{
+            display: flex;
+            width:66%;
+            justify-content: space-around;
+            align-items: center;
+            margin: 200px auto;
+        }
+        h2 {
+            cursor: pointer;
+            color: #EEEEEE;
+        }
+    </style>
+</head>
+<script th:inline="javascript">
+    function onLineReadPDF() {
+        window.open("/js/web/viewer.html?file=/preview");
+    }
+
+    function onLineReadPDF2() {
+        window.open("/imgList.html");
+    }
+
+    function info() {
+        alert([[${name}]])
+    }
+</script>
+<body>
+<div class="parent">
+    <h2 onclick="onLineReadPDF()">我的简历</h2>
+    <h2 onclick="onLineReadPDF2()">我的作品</h2>
+    <h2 onclick="info()">离职说明</h2>
+    <h2 href="">其他</h2>
+</div>
+</body>
+</html>

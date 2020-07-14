@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: dev
+  jpa:
+    properties:
+      #hibernate validator 添加 更新时取消验证
+      javax.persistence.validation.mode: none
+      hibernate.dialect: org.hibernate.dialect.MySQL55Dialect
+    hibernate:
+      ddl-auto: create
+
+
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+
+
+
+#logging:
+#  level:
+#    org.springframework: WARN
+#    com.xxs.test.service.impl: debug
+#    logging:
+#      file: logs/xxsxxs.log
+
+DEST: /root/server/myzone/file/finishResume.pdf
+FONT:
+HTML:

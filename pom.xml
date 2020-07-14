@@ -12,11 +12,14 @@
     <artifactId>myzone</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>myzone</name>
+    <packaging>pom</packaging>
     <description>Demo project for Spring Boot</description>
 
     <modules>
         <module>myresume</module>
         <module>mycat</module>
+        <module>myuploader</module>
+        <module>swagger-demo</module>
     </modules>
 
     <properties>
