@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://123.56.26.20:3308/resume?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: root
+
+# mybatis config
+mybatis-plus:
+  type-aliases-package: com.xxkj.swaggerdemo.model.entity
+  mapper-locations: classpath:*/mapper/*Mapper.xml
+  # ������ûὫִ�е�sql��ӡ����
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

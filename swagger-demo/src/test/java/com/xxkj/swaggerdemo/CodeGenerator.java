@@ -105,7 +105,7 @@ public class CodeGenerator {
         gc.setAuthor("zhangjingxin");
         gc.setOpen(false); // 是否打开输出目录
         //gc.setOutputDir(projectPath + "/src/main/java"); // 输出文件目录
-        gc.setFileOverride(true); // 是否覆盖已有文件
+        gc.setFileOverride(false); // 是否覆盖已有文件
         gc.setSwagger2(true);  // 实体属性 Swagger2 注解
         gc.setMapperName("%sMapper");
         gc.setXmlName("%sMapper");
@@ -119,22 +119,22 @@ public class CodeGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl(url);
+        dsc.setUrl(url.trim());
         //dsc.setSchemaName("public");
-        dsc.setUsername(username);
-        dsc.setPassword(password);
-        dsc.setDriverName(driverClass);
+        dsc.setUsername(username.trim());
+        dsc.setPassword(password.trim());
+        dsc.setDriverName(driverClass.trim());
 
         mpg.setDataSource(dsc);
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent(projectPackage);
+        pc.setParent(projectPackage.trim());
         //pc.setModuleName("model名"); 自定义包名
-        pc.setMapper(setMapper);
-        pc.setEntity(setEntity);
-        pc.setService(setService);
-        pc.setController(setController);
+        pc.setMapper(setMapper.trim());
+        pc.setEntity(setEntity.trim());
+        pc.setService(setService.trim());
+        pc.setController(setController.trim());
         mpg.setPackageInfo(pc);
 
         // 自定义配置

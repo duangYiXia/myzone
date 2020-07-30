@@ -1,0 +1,549 @@
+
+[[_paths]]
+== 资源
+
+[[_basic-error-controller_resource]]
+=== Basic-error-controller
+Basic Error Controller
+
+
+[[_errorhtmlusingpost]]
+==== errorHtml
+....
+POST /error
+....
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|<<_modelandview,ModelAndView>>
+|**201**|Created|无内容
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|**404**|Not Found|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `text/html`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/error
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+----
+
+
+[[_errorhtmlusingget]]
+==== errorHtml
+....
+GET /error
+....
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|<<_modelandview,ModelAndView>>
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|**404**|Not Found|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `text/html`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/error
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+----
+
+
+[[_errorhtmlusingput]]
+==== errorHtml
+....
+PUT /error
+....
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|<<_modelandview,ModelAndView>>
+|**201**|Created|无内容
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|**404**|Not Found|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `text/html`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/error
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+----
+
+
+[[_errorhtmlusingdelete]]
+==== errorHtml
+....
+DELETE /error
+....
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|<<_modelandview,ModelAndView>>
+|**204**|No Content|无内容
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `text/html`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/error
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+----
+
+
+[[_errorhtmlusingpatch]]
+==== errorHtml
+....
+PATCH /error
+....
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|<<_modelandview,ModelAndView>>
+|**204**|No Content|无内容
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `text/html`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/error
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+----
+
+
+[[_errorhtmlusinghead]]
+==== errorHtml
+....
+HEAD /error
+....
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|<<_modelandview,ModelAndView>>
+|**204**|No Content|无内容
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `text/html`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/error
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+----
+
+
+[[_errorhtmlusingoptions]]
+==== errorHtml
+....
+OPTIONS /error
+....
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|<<_modelandview,ModelAndView>>
+|**204**|No Content|无内容
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `text/html`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/error
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+{
+  "empty" : true,
+  "model" : "object",
+  "modelMap" : {
+    "string" : "object"
+  },
+  "reference" : true,
+  "status" : "string",
+  "view" : {
+    "contentType" : "string"
+  },
+  "viewName" : "string"
+}
+----
+
+
+[[_my-test-controller_resource]]
+=== My-test-controller
+My Test Controller
+
+
+[[_addusingpost]]
+==== add
+....
+POST /my-test/add
+....
+
+
+===== 参数
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|类型|名称|说明|类型
+|**Body**|**myTestDto** +
+__必填__|myTestDto|<<_7f69806f3b8d5362f7dffab8eab81341,MyTest对象>>
+|===
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|<<_a694ca59080236b0fe4a57dec75ba248,返回类>>
+|**201**|Created|无内容
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|**404**|Not Found|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `*/*`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/my-test/add
+----
+
+
+====== 请求 body
+[source,json]
+----
+{
+  "des" : "12345",
+  "id" : 0,
+  "name" : "test-name"
+}
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+{
+  "code" : "string",
+  "data" : "object",
+  "message" : "string",
+  "status" : false,
+  "txID" : "string"
+}
+----
+
+
+[[_listusingget]]
+==== list
+....
+GET /my-test/list
+....
+
+
+===== 响应
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP代码|说明|类型
+|**200**|OK|<<_a694ca59080236b0fe4a57dec75ba248,返回类>>
+|**401**|Unauthorized|无内容
+|**403**|Forbidden|无内容
+|**404**|Not Found|无内容
+|===
+
+
+===== 消耗
+
+* `application/json`
+
+
+===== 生成
+
+* `*/*`
+
+
+===== HTTP请求示例
+
+====== 请求 path
+----
+/my-test/list
+----
+
+
+===== HTTP响应示例
+
+====== 响应 200
+[source,json]
+----
+{
+  "code" : "string",
+  "data" : "object",
+  "message" : "string",
+  "status" : false,
+  "txID" : "string"
+}
+----
+
+
+

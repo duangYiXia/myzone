@@ -1,0 +1,40 @@
+
+h2. 定义 {anchor:definitions}
+
+h3. ModelAndView {anchor:modelandview}
+
+||名称||说明||类型||
+|*empty*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*model*\\ \\ _可选_||*样例* : {noformat}"object"{noformat}||object|
+|*modelMap*\\ \\ _可选_||*样例* : {noformat}{\\   "string" : "object"\\ }{noformat}||< string, object > map|
+|*reference*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*status*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||enum (100 CONTINUE, 101 SWITCHING_PROTOCOLS, 102 PROCESSING, 103 CHECKPOINT, 200 OK, 201 CREATED, 202 ACCEPTED, 203 NON_AUTHORITATIVE_INFORMATION, 204 NO_CONTENT, 205 RESET_CONTENT, 206 PARTIAL_CONTENT, 207 MULTI_STATUS, 208 ALREADY_REPORTED, 226 IM_USED, 300 MULTIPLE_CHOICES, 301 MOVED_PERMANENTLY, 302 FOUND, 302 MOVED_TEMPORARILY, 303 SEE_OTHER, 304 NOT_MODIFIED, 305 USE_PROXY, 307 TEMPORARY_REDIRECT, 308 PERMANENT_REDIRECT, 400 BAD_REQUEST, 401 UNAUTHORIZED, 402 PAYMENT_REQUIRED, 403 FORBIDDEN, 404 NOT_FOUND, 405 METHOD_NOT_ALLOWED, 406 NOT_ACCEPTABLE, 407 PROXY_AUTHENTICATION_REQUIRED, 408 REQUEST_TIMEOUT, 409 CONFLICT, 410 GONE, 411 LENGTH_REQUIRED, 412 PRECONDITION_FAILED, 413 PAYLOAD_TOO_LARGE, 413 REQUEST_ENTITY_TOO_LARGE, 414 URI_TOO_LONG, 414 REQUEST_URI_TOO_LONG, 415 UNSUPPORTED_MEDIA_TYPE, 416 REQUESTED_RANGE_NOT_SATISFIABLE, 417 EXPECTATION_FAILED, 418 I_AM_A_TEAPOT, 419 INSUFFICIENT_SPACE_ON_RESOURCE, 420 METHOD_FAILURE, 421 DESTINATION_LOCKED, 422 UNPROCESSABLE_ENTITY, 423 LOCKED, 424 FAILED_DEPENDENCY, 426 UPGRADE_REQUIRED, 428 PRECONDITION_REQUIRED, 429 TOO_MANY_REQUESTS, 431 REQUEST_HEADER_FIELDS_TOO_LARGE, 451 UNAVAILABLE_FOR_LEGAL_REASONS, 500 INTERNAL_SERVER_ERROR, 501 NOT_IMPLEMENTED, 502 BAD_GATEWAY, 503 SERVICE_UNAVAILABLE, 504 GATEWAY_TIMEOUT, 505 HTTP_VERSION_NOT_SUPPORTED, 506 VARIANT_ALSO_NEGOTIATES, 507 INSUFFICIENT_STORAGE, 508 LOOP_DETECTED, 509 BANDWIDTH_LIMIT_EXCEEDED, 510 NOT_EXTENDED, 511 NETWORK_AUTHENTICATION_REQUIRED)|
+|*view*\\ \\ _可选_||*样例* : {noformat}"[#view]"{noformat}||[View|#view]|
+|*viewName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+h3. MyTest对象 {anchor:7f69806f3b8d5362f7dffab8eab81341}
+
+||名称||说明||类型||
+|*des*\\ \\ _可选_||描述\\ \\ *样例* : {noformat}"12345"{noformat}||string|
+|*id*\\ \\ _可选_||主键ID\\ \\ *样例* : {noformat}0{noformat}||integer (int64)|
+|*name*\\ \\ _必填_||名称\\ \\ *样例* : {noformat}"test-name"{noformat}||string|
+
+
+h3. View {anchor:view}
+
+||名称||说明||类型||
+|*contentType*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+h3. 返回类 {anchor:a694ca59080236b0fe4a57dec75ba248}
+
+||名称||说明||类型||
+|*code*\\ \\ _可选_||返回信息码\\ \\ *样例* : {noformat}"string"{noformat}||string|
+|*data*\\ \\ _可选_||返回数据\\ \\ *样例* : {noformat}"object"{noformat}||object|
+|*message*\\ \\ _可选_||错误返回的文字信息\\ \\ *样例* : {noformat}"string"{noformat}||string|
+|*status*\\ \\ _可选_||返回的状态\\ \\ *样例* : {noformat}false{noformat}||boolean|
+|*txID*\\ \\ _可选_||线程号\\ \\ *样例* : {noformat}"string"{noformat}||string|
+
+
+

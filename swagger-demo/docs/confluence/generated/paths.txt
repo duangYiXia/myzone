@@ -1,0 +1,412 @@
+
+h2. 资源 {anchor:paths}
+
+h3. Basic-error-controller {anchor:basic-error-controller_resource}
+Basic Error Controller
+
+
+h4. error {anchor:errorusingpost}
+{noformat}
+POST /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||< string, object > map|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"object"
+{code}
+
+
+h4. error {anchor:errorusingget}
+{noformat}
+GET /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||< string, object > map|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"object"
+{code}
+
+
+h4. error {anchor:errorusingput}
+{noformat}
+PUT /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||< string, object > map|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"object"
+{code}
+
+
+h4. error {anchor:errorusingdelete}
+{noformat}
+DELETE /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||< string, object > map|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"object"
+{code}
+
+
+h4. error {anchor:errorusingpatch}
+{noformat}
+PATCH /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||< string, object > map|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"object"
+{code}
+
+
+h4. error {anchor:errorusinghead}
+{noformat}
+HEAD /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||< string, object > map|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"object"
+{code}
+
+
+h4. error {anchor:errorusingoptions}
+{noformat}
+OPTIONS /error
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||< string, object > map|
+|*204*||No Content||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/error
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"object"
+{code}
+
+
+h3. My-test-controller {anchor:my-test-controller_resource}
+My Test Controller
+
+
+h4. add {anchor:addusingpost}
+{noformat}
+POST /my-test/add
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Body*|*myTestDto*\\ \\ _必填_||myTestDto||[MyTest对象|#7f69806f3b8d5362f7dffab8eab81341]|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[返回类|#a694ca59080236b0fe4a57dec75ba248]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/my-test/add
+{code}
+
+
+h6. 请求 body
+{code:language=json}
+{
+  "des" : "12345",
+  "id" : 0,
+  "name" : "test-name"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "code" : "string",
+  "data" : "object",
+  "message" : "string",
+  "status" : false,
+  "txID" : "string"
+}
+{code}
+
+
+h4. list {anchor:listusingget}
+{noformat}
+GET /my-test/list
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[返回类|#a694ca59080236b0fe4a57dec75ba248]|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/my-test/list
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "code" : "string",
+  "data" : "object",
+  "message" : "string",
+  "status" : false,
+  "txID" : "string"
+}
+{code}
+
+
+
