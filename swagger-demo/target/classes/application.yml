@@ -11,6 +11,6 @@ spring:
 mybatis-plus:
   type-aliases-package: com.xxkj.swaggerdemo.model.entity
   mapper-locations: classpath:*/mapper/*Mapper.xml
-  # 锟斤拷锟斤拷锟斤拷没峤达拷械锟絪ql锟斤拷印锟斤拷锟斤拷
+  # 这个配置会将执行的sql打印出来
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

@@ -17,7 +17,7 @@
 
     <modules>
         <module>myresume</module>
-        <module>mycat</module>
+        <!--<module>mycat</module>-->
         <module>myuploader</module>
         <module>swagger-demo</module>
     </modules>
